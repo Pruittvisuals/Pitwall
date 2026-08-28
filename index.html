@@ -668,6 +668,9 @@ footer{
 .reveal.is-visible{ opacity:1; transform:translateY(0); }
 
 </style>
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
 </head>
 <body>
 
@@ -686,7 +689,14 @@ footer{
       </ul>
     </nav>
     <div class="nav-cta">
-      <a href="#membership" class="btn btn-ghost">Join — $17.99/mo</a>
+      <div style="position:relative;display:inline-block;">
+        <stripe-buy-button
+          buy-button-id="buy_btn_1U6wo4LekmEquM7Q94FakN8F"
+          publishable-key="pk_live_51U6wLpLekmEquM7QBF1N4Frk39Xhko73yovNhKy6CK1NBahmInLskOoInRBxmCAJvROFTd22NgVn1y4fYbzz4KO900UchZW2PQ"
+          style="position:absolute;inset:0;opacity:0;cursor:pointer;"
+        ></stripe-buy-button>
+        <a href="#membership" class="btn btn-ghost" style="pointer-events:none;">Join — $17.99/mo</a>
+      </div>
     </div>
   </div>
 </header>
@@ -701,7 +711,14 @@ footer{
       <h1>One car a month, picked for what made it <em>matter</em>.</h1>
       <p class="sub">Every box is researched and put together the same month it ships. What's inside changes with the car — there's no fixed formula, and nothing carries over to the next one.</p>
       <div class="hero-actions">
-        <a href="#" class="btn btn-primary">Join the club</a>
+        <div style="position:relative;display:inline-block;">
+          <stripe-buy-button
+            buy-button-id="buy_btn_1U6wo4LekmEquM7Q94FakN8F"
+            publishable-key="pk_live_51U6wLpLekmEquM7QBF1N4Frk39Xhko73yovNhKy6CK1NBahmInLskOoInRBxmCAJvROFTd22NgVn1y4fYbzz4KO900UchZW2PQ"
+            style="position:absolute;inset:0;opacity:0;cursor:pointer;"
+          ></stripe-buy-button>
+          <a href="#" class="btn btn-primary" style="pointer-events:none;">Join the club</a>
+        </div>
         <a href="#manifest" class="btn btn-ghost">See what's inside</a>
       </div>
       <p class="hero-note">Cancel anytime · New edition ships monthly</p>
@@ -889,7 +906,14 @@ footer{
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> First access when past editions reopen</li>
       </ul>
 
-      <a href="#" class="btn btn-primary">Join the club</a>
+      <div style="position:relative;display:inline-block;">
+        <stripe-buy-button
+          buy-button-id="buy_btn_1U6wo4LekmEquM7Q94FakN8F"
+          publishable-key="pk_live_51U6wLpLekmEquM7QBF1N4Frk39Xhko73yovNhKy6CK1NBahmInLskOoInRBxmCAJvROFTd22NgVn1y4fYbzz4KO900UchZW2PQ"
+          style="position:absolute;inset:0;opacity:0;cursor:pointer;"
+        ></stripe-buy-button>
+        <a href="#" class="btn btn-primary" style="pointer-events:none;">Join the club</a>
+      </div>
       <p class="member-fine">Billed monthly. Pause or cancel anytime from your account.</p>
     </div>
   </div>
